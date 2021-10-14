@@ -1,0 +1,12 @@
+version: "2.2"
+
+services:
+ asir_web:
+  image: internetsystemsconsortium/bind9:9.16
+  ports: 
+    - 9000:80
+  volumes:
+    - /etc/bind
+    - /var/cache/bind
+    - /var/lib/bind
+    - /var/log
